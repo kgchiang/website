@@ -1,0 +1,110 @@
+/* Small screen media query */
+@media only screen and (min-width:320px) {
+  #intro_container #head_shot {
+    width: 100%;
+  }
+
+  #intro_container #head_shot img {
+    width: 100%;
+  }
+
+  #autobiography {
+    margin-top: 60px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.2em;
+    color: #4c4c4c;
+  }
+
+  #cta {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+  }
+
+  #email_box {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* Medium to large screen media query*/
+@media only screen and (min-width:800px) {
+  #intro_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #intro_container .me {
+    width: 48%;
+  }
+
+  #intro_container #head_shot img {
+    width: 90%;
+  }
+
+  #intro_container #head_shot {
+    flex: 1;
+  }
+
+  #intro_container #autobiography {
+    margin-top: initial;
+    flex: 1;
+    text-align: left;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.2em;
+    color: #4c4c4c;
+  }
+
+  #cta {
+    text-align: initial;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+  }
+
+  #email_box {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+#email {
+  display: block;
+  resize: none;
+  white-space: nowrap;
+  overflow: visible;
+  box-shadow: none;
+  outline: none;
+  width: 190px;
+}
+
+#copy_btn {
+  width: 48px;
+  text-align: center;
+  color: #fff;
+  background: rgb(247, 153, 28);
+  border: 2px solid rgb(247, 153, 28);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+#copy_btn:hover {
+  opacity: 0.8;
+  transition: all 0.2s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+#email, #copy_btn {
+  border: 2px solid rgb(247, 153, 28);
+  padding: 12px 12px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
